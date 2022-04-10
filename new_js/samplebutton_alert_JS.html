@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alert with alert</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button id="test" onclick="test()">click me</button>
+
+    <script>
+      //   document.getElementById("test").addEventListener("click", function () {
+      //     alert("You clicked me");
+      //   });
+      //   document
+      //     .getElementById("test")
+      //     .addEventListener("mouseover", function () {
+      //       alert("you hovred on me");
+      //     });
+      function test() {
+        var val = document.getElementById("input").value;
+        alert(val);
+      }
+    </script>
+  </body>
+</html>
