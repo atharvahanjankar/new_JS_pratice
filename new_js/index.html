@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript_new</title>
+  </head>
+  <body>
+    <script>
+      let arr = [4, 5, 6, 8];
+      console.log("length is " + arr.length); //array of length
+      console.log(arr); //to display array
+      console.log(arr[3]); //to display a particular valur at a index position.
+
+      for (var i = 0; i <= arr.length - 1; i++) {
+        console.log(arr[i]);
+      }
+
+      let obj = {
+        name: "atharva",
+        profession: "fullstack developer",
+      };
+
+      //to display object values.
+      console.log(obj.name);
+      console.log(obj.profession);
+      console.log(obj.name + " " + obj.profession);
+
+      //accesss value in array ie. key of object
+      console.log(obj["name"]); //name will always be in string.
+
+      //length of object
+      // x console.log(obj.length); wrong way
+      console.log(Object.keys(obj).length);
+
+      var keys = Object.keys(obj);
+      for (i = 0; i < keys.length; i++) {
+        // console.log(obj); will print three times not needed
+        let obj_val = Object.values(obj);
+        let key = keys[i];
+        // console.log(keys[i]);
+        console.log(key);
+        console.log(obj_val);
+        console.log(obj_val[i]);
+      }
+      //   let obj_val = Object.value[i];
+      //   console.log(obj_val);
+    </script>
+  </body>
+</html>

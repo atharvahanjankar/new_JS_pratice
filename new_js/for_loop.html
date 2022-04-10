@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      //for each
+      let arr = [2, 3, 4, 6];
+      arr.forEach(function (x, index) {
+        console.log({ index });
+        console.log(x);
+      });
+
+      //for in (to check object values.)
+      let obj = {
+        name: "atharva",
+        address: "mumbai",
+      };
+      //access object values -> for in
+      for (value in obj) {
+        console.log({ value });
+        console.log(obj[value]);
+      }
+      //access object values -> for of
+      for (value of Object.values(obj)) {
+        console.log({ value });
+      }
+      //access array values -> for of
+      for (value of arr) {
+        console.log({ value });
+      }
+    </script>
+  </body>
+</html>
